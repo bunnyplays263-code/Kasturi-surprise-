@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe8f0">
+<title>A Little Something for Kasturi 💗</title>
+<style>
+:root{--rose:#d85d86;--rose2:#f29bb7;--ink:#70475b;--paper:#fffafc;--lilac:#e9e1ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:linear-gradient(135deg,#fff0f5 0%,#f4edff 48%,#ffe9f0 100%);overflow-x:hidden}
+button{font:inherit}
+.sky{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.sky span{position:absolute;bottom:-12vh;opacity:0;animation:drift 13s linear infinite;filter:drop-shadow(0 3px 4px #b66c9020)}
+.sky span:nth-child(1){left:7%;animation-delay:0s;font-size:22px}.sky span:nth-child(2){left:19%;animation-delay:3s;font-size:30px}.sky span:nth-child(3){left:36%;animation-delay:7s;font-size:18px}.sky span:nth-child(4){left:61%;animation-delay:1s;font-size:26px}.sky span:nth-child(5){left:78%;animation-delay:5s;font-size:21px}.sky span:nth-child(6){left:91%;animation-delay:8s;font-size:32px}.sky span:nth-child(7){left:14%;animation-delay:6s;font-size:24px}.sky span:nth-child(8){left:43%;animation-delay:9s;font-size:19px}.sky span:nth-child(9){left:56%;animation-delay:2.5s;font-size:22px}.sky span:nth-child(10){left:83%;animation-delay:10s;font-size:28px}.sky span:nth-child(11){left:31%;animation-delay:11s;font-size:17px}.sky span:nth-child(12){left:68%;animation-delay:6.5s;font-size:20px}
+@keyframes drift{0%{transform:translateY(0) rotate(-10deg);opacity:0}12%{opacity:.72}85%{opacity:.65}100%{transform:translateY(-125vh) rotate(30deg);opacity:0}}
+.glow{position:fixed;width:360px;height:360px;border-radius:50%;filter:blur(70px);opacity:.3;pointer-events:none;z-index:0;background:#ffbad1;top:-130px;left:-100px;animation:glow 9s ease-in-out infinite alternate}
+.glow.two{background:#cbbaff;top:auto;left:auto;right:-130px;bottom:-140px;animation-delay:-4s}
+@keyframes glow{to{transform:translate(50px,70px) scale(1.18)}}
+main{position:relative;z-index:1;width:min(760px,calc(100% - 28px));margin:0 auto;padding:34px 0 55px}
+.hero{text-align:center;padding:24px 18px 28px;animation:heroEntrance 1.2s cubic-bezier(.2,.8,.2,1) both}
+@keyframes heroEntrance{0%{opacity:0;transform:translateY(35px) scale(.96);filter:blur(5px)}70%{opacity:1;transform:translateY(-5px) scale(1.01);filter:blur(0)}100%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+.eyebrow{font:600 .72rem/1.4 Arial,sans-serif;letter-spacing:.23em;text-transform:uppercase;color:#b97891}
+.hero h1{font-size:clamp(2.3rem,8vw,4.7rem);line-height:1.03;letter-spacing:-.04em;font-weight:normal;margin:14px 0;color:#9f4f71}
+.hero h1 span{font-style:italic;color:#d86c94}
+.hero p{font:1rem/1.8 Arial,sans-serif;color:#98798a;margin:0 auto;max-width:440px}
+.hero-heart{display:inline-block;font-size:42px;animation:heartBeat 2s ease-in-out infinite;filter:drop-shadow(0 5px 9px #dc83a44c)}
+@keyframes heartBeat{0%,100%{transform:scale(1)}12%{transform:scale(1.12)}22%{transform:scale(1)}32%{transform:scale(1.08)}44%{transform:scale(1)}}
+.card{background:#ffffffc9;border:1px solid #fff;border-radius:28px;padding:clamp(22px,5vw,42px);box-shadow:0 24px 70px #a66c851c, inset 0 1px #fff;backdrop-filter:blur(12px);margin:12px 0 24px;animation:rise .9s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.intro{text-align:center}
+.kicker{font:600 .7rem Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#c17b98}
+.intro h2,.section-head h2{font-weight:normal;color:#9f4f71;font-size:clamp(1.65rem,5vw,2.2rem);margin:10px 0}
+.intro p{font: .98rem/1.8 Arial,sans-serif;color:#967889}
+.primary{border:0;cursor:pointer;color:white;background:linear-gradient(120deg,#e879a0,#c85c88);padding:14px 24px;border-radius:999px;box-shadow:0 9px 22px #d86d963b;transition:transform .25s,box-shadow .25s; font:600 .88rem Arial,sans-serif;letter-spacing:.02em}
+.primary:hover{transform:translateY(-3px);box-shadow:0 13px 26px #d86d9650}
+.primary:active{transform:scale(.98)}
+.envelope-wrap{display:flex;justify-content:center;margin:28px 0 4px}
+.envelope{width:170px;height:118px;position:relative;cursor:pointer;border:0;background:transparent;perspective:700px;filter:drop-shadow(0 12px 12px #b9678626);animation:floatEnvelope 3.2s ease-in-out infinite}
+@keyframes floatEnvelope{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.env-body{position:absolute;inset:17px 5px 3px;border-radius:9px;background:#f6a8c2;overflow:hidden}
+.env-body:before,.env-body:after{content:"";position:absolute;bottom:0;width:0;height:0;border-style:solid}
+.env-body:before{left:0;border-width:0 0 82px 82px;border-color:transparent transparent #fbd0df transparent}
+.env-body:after{right:0;border-width:0 82px 82px 0;border-color:transparent #f7bfd2 transparent transparent}
+.env-flap{position:absolute;z-index:3;top:17px;left:5px;width:160px;height:80px;background:#f9c4d6;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform .75s cubic-bezier(.2,.75,.2,1);filter:drop-shadow(0 2px 1px #cc7190)}
+.env-seal{position:absolute;z-index:4;top:47px;left:68px;font-size:30px;transition:transform .35s,opacity .3s}
+.envelope.open .env-flap{transform:rotateX(180deg);z-index:1}
+.envelope.open .env-seal{transform:scale(.2);opacity:0}
+.tap-hint{text-align:center;font: .8rem Arial,sans-serif;color:#b17a91;margin:10px 0 0}
+.letter{display:none;position:relative;background:linear-gradient(160deg,#fffdfd,#fff4f8);border:1px solid #f6d8e3;border-radius:20px;padding:clamp(20px,4vw,32px);margin-top:25px;text-align:left;line-height:1.9;box-shadow:0 12px 35px #bd75911a;transform-origin:top;white-space:normal}
+.letter.show{display:block;animation:unfold .9s cubic-bezier(.2,.8,.2,1) both}.letter.show:after{content:"💗  ✨  💗";display:block;text-align:center;letter-spacing:.45em;margin-top:18px;color:#d86c94;animation:twinkle 2s ease-in-out infinite alternate}@keyframes twinkle{from{opacity:.45;transform:scale(.98)}to{opacity:1;transform:scale(1.03)}}
+@keyframes unfold{from{opacity:0;transform:perspective(800px) rotateX(-9deg) translateY(-12px) scale(.97);clip-path:inset(0 0 100% 0)}to{opacity:1;transform:perspective(800px) rotateX(0) translateY(0) scale(1);clip-path:inset(0 0 0 0)}}
+.letter h3{text-align:center;color:#b15378;font-size:1.6rem;font-weight:normal;margin:0 0 22px}
+.letter p{font-size:1rem;margin:0 0 16px}
+.signature{text-align:right;color:#b15378;font-style:italic;font-size:1.12rem}
+.section-head{text-align:center;margin:42px 0 18px}
+.section-head p{font: .9rem/1.7 Arial,sans-serif;color:#98798a;margin:0}
+.sunshine-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.sun-card{position:relative;overflow:hidden;border:1px solid #ffffff;background:#ffffffb8;border-radius:22px;padding:22px 12px 20px;min-height:155px;cursor:pointer;color:var(--ink);box-shadow:0 10px 28px #a66c8510;transition:transform .3s,box-shadow .3s,background .3s}
+.sun-card:before{content:"";position:absolute;inset:0;background:linear-gradient(140deg,#ffe2ec77,transparent 65%);opacity:.8}
+.sun-card:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:0 18px 32px #a66c8520;background:#fff}
+.sun-card:nth-child(2):hover{transform:translateY(-6px) rotate(1deg)}
+.sun-card .emoji{position:relative;display:block;font-size:34px;margin-bottom:12px;animation:iconBob 3s ease-in-out infinite}.sun-card{animation:cardArrive .65s ease both}.sun-card:nth-child(2){animation-delay:.12s}.sun-card:nth-child(3){animation-delay:.24s}@keyframes cardArrive{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.sun-card:nth-child(2) .emoji{animation-delay:.6s}.sun-card:nth-child(3) .emoji{animation-delay:1.2s}
+@keyframes iconBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.sun-card strong,.sun-card small{position:relative;display:block}.sun-card strong{font-size:1rem;color:#a84f74;font-weight:normal}.sun-card small{font: .7rem Arial,sans-serif;color:#b18a9c;margin-top:7px}.sun-card .click-cue{display:inline-flex;align-items:center;gap:5px;font:600 .68rem Arial,sans-serif;letter-spacing:.04em;color:#cf6a91;margin-top:10px}.click-cue .arrow{display:inline-block;font-size:17px;animation:arrowNudge 1s ease-in-out infinite}@keyframes arrowNudge{0%,100%{transform:translateX(0)}50%{transform:translateX(5px)}}
+.sun-message{display:none;margin-top:16px;padding:22px 20px;text-align:center;line-height:1.85;font-size:1.08rem;background:#fff9fc;border:1px solid #f7dce6;border-radius:22px;box-shadow:0 10px 25px #a66c8510}
+.sun-message.show{display:block;animation:messagePop .55s cubic-bezier(.2,.8,.2,1) both}
+@keyframes messagePop{0%{opacity:0;transform:translateY(12px) scale(.97)}70%{transform:translateY(-2px) scale(1.01)}100%{opacity:1;transform:translateY(0) scale(1)}}
+.sun-message .sparkle{display:block;font-size:25px;margin-bottom:7px}
+.footer{text-align:center;padding:28px 10px 0;font: .78rem/1.8 Arial,sans-serif;color:#b0879a}
+.footer .tiny-heart{display:block;font-size:21px;margin-bottom:5px;animation:heartBeat 2s infinite}
+
+/* Extra-visible motion: floating hearts, gentle card shimmer, and click bursts */
+.card{animation:cardEntrance 1s .2s cubic-bezier(.2,.8,.2,1) both}
+@keyframes cardEntrance{0%{opacity:0;transform:translateY(28px) scale(.985)}75%{opacity:1;transform:translateY(-3px) scale(1.005)}100%{opacity:1;transform:translateY(0) scale(1)}}
+.hero h1{animation:titleGlow 3.5s ease-in-out infinite alternate}
+@keyframes titleGlow{from{text-shadow:0 0 0 #f6b4cb00}to{text-shadow:0 0 18px #f3a5c34d}}
+.primary{animation:buttonPulse 2.8s ease-in-out infinite}
+@keyframes buttonPulse{0%,100%{box-shadow:0 9px 22px #d86d963b}50%{box-shadow:0 10px 30px #d86d9670}}
+.sun-card{animation:cardArrive .8s both, cardFloat 4s ease-in-out 1s infinite}
+@keyframes cardFloat{0%,100%{translate:0 0}50%{translate:0 -4px}}
+.particle{position:fixed;z-index:20;pointer-events:none;font-size:24px;animation:particleFly 1.5s ease-out forwards;filter:drop-shadow(0 3px 4px #b66c9040)}
+@keyframes particleFly{0%{opacity:0;transform:translate(0,0) scale(.45) rotate(0)}15%{opacity:1}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.45) rotate(var(--rot))}}
+
+@media(max-width:560px){main{padding-top:14px}.hero{padding:20px 8px}.card{border-radius:23px}.sunshine-grid{grid-template-columns:1fr;gap:10px}.sun-card{min-height:unset;padding:17px;display:flex;align-items:center;gap:14px;text-align:left}.sun-card .emoji{margin:0;width:44px}.sun-card small{margin-top:4px}.envelope{transform:scale(.92)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><span>💕</span><span>💗</span><span>✧</span><span>💖</span><span>♡</span><span>💞</span><span>💘</span><span>♥</span><span>🌸</span><span>💓</span><span>♡</span><span>✨</span></div>
+<div class="glow"></div><div class="glow two"></div>
+<main>
+  <header class="hero">
+    <div class="hero-heart">💗</div>
+    <h1>A little note<br><span>for Kasturi</span></h1>
+    <p>Made with a full heart, lots of thought, and a little bit of courage.</p>
+  </header>
+
+  <section class="card intro">
+    <div class="kicker">just for you</div>
+    <h2>Hey, Kasturi ❤️</h2>
+    <p>I made something special for you...</p>
+    <button class="primary" onclick="revealHint()">A tiny surprise awaits ✨</button>
+    <p id="hint" style="display:none;margin:16px 0 0">Take a breath, tap the little envelope, and open this when you're ready. 💌</p>
+    <div class="envelope-wrap">
+      <button class="envelope" id="envelope" onclick="openLetter()" aria-label="Open your letter">
+        <span class="env-body"></span><span class="env-flap"></span><span class="env-seal">💗</span>
+      </button>
+    </div>
+    <p class="tap-hint">tap the envelope to open your letter</p>
+    <article id="letter" class="letter">
+      <h3>For you, Kasturi 💗</h3>
+      <p>See this is not just an apology but khup vichar karun mi boltoy he, I know mi mess up karto humesha tyacha trass tula hoto, mala maje words control karave lagtil, mi kaa bollo kaa nhi he mi explain nhi karnar because who matters is tula kasha mule pn suffer nhi zala pahije agdhi kasha mule pn nhi.</p>
+      <p>Bachhu possible asel tr kharach maaf kr mi jara ahe dokya ni kami kadhi kadhi maja defensive wall yete, but maja intention tula trass dyaycha nhi.</p>
+      <p>Mala yevda samjayla havay ki mi humesha happy nhi theu shakat aahe tr atleast trass trhi nko dyayla tula</p>
+      <p>Tu orad kahi pn bol chupchap aikel mi baaki kahi nhi bolnar aaj</p>
+      <p><strong>Really SORRY</strong></p>
+      <div class="signature">❤️</div>
+    </article>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="kicker">little reminders</div>
+      <h2>☀️ Pocket of Sunshine ☀️</h2>
+      <p>Pick a little pocket whenever you need it.</p>
+    </div>
+    <div class="sunshine-grid">
+      <button class="sun-card" onclick="showSunshine('sunshine')"><span class="emoji">☀️</span><span><strong>Sunshine</strong><small>a little reassurance</small><span class="click-cue">tap to open <span class="arrow">➜</span></span></span></button>
+      <button class="sun-card" onclick="showSunshine('hug')"><span class="emoji">🫂</span><span><strong>Virtual Hug</strong><small>come here, pillu</small><span class="click-cue">tap to open <span class="arrow">➜</span></span></span></button>
+      <button class="sun-card" onclick="showSunshine('cute')"><span class="emoji">🥹</span><span><strong>Emergency Cutness</strong><small>one tiny smile, please</small><span class="click-cue">tap to open <span class="arrow">➜</span></span></span></button>
+    </div>
+    <div id="sun-message" class="sun-message" aria-live="polite"></div>
+  </section>
+  <footer class="footer"><span class="tiny-heart">♡</span>No pressure to reply. Take all the time you need.<br>Made just for you, with care. 💗</footer>
+</main>
+<script>
+function burstHearts(x,y,count=12){
+ const bits=['💗','💕','✨','💖','♡','🌸'];
+ for(let i=0;i<count;i++){
+  const el=document.createElement('span');el.className='particle';el.textContent=bits[Math.floor(Math.random()*bits.length)];
+  el.style.left=x+'px';el.style.top=y+'px';
+  el.style.setProperty('--dx',(Math.random()*240-120)+'px');el.style.setProperty('--dy',(-50-Math.random()*190)+'px');el.style.setProperty('--rot',(Math.random()*100-50)+'deg');
+  document.body.appendChild(el);setTimeout(()=>el.remove(),1600);
+ }
+}
+document.addEventListener('click',e=>{if(e.target.closest('button'))burstHearts(e.clientX,e.clientY,9)});
+window.addEventListener('load',()=>{setTimeout(()=>{const r=document.querySelector('.hero-heart').getBoundingClientRect();burstHearts(r.left+r.width/2,r.top+r.height/2,10)},500)});
+function revealHint(){
+ const hint=document.getElementById('hint');
+ hint.style.display='block';
+ hint.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:450,easing:'ease-out'});
+}
+function openLetter(){
+ const env=document.getElementById('envelope');
+ const letter=document.getElementById('letter');
+ env.classList.toggle('open');
+ if(!letter.classList.contains('show')){
+   letter.classList.add('show');
+   setTimeout(()=>letter.scrollIntoView({behavior:'smooth',block:'nearest'}),180);
+ } else {
+   letter.classList.remove('show');
+   void letter.offsetWidth;
+   letter.classList.add('show');
+ }
+}
+function showSunshine(type){
+ const messages={
+  sunshine:'Baby kahi pn zala but majashi kahi nko lapavus, mi kasla issue nhi karnar ☀️💗',
+  hug:'Tula mahit aahe naa mi tujach aahe, ye javal sorry g pillu 🫂❤️',
+  cute:'Atta shanya bala sarkha goad goad hasaych, please haa bacchu 🥹💕'
+ };
+ const box=document.getElementById('sun-message');
+ box.innerHTML='<span class="sparkle">✧･ﾟ: *✧･ﾟ:* 💗 *:･ﾟ✧*:･ﾟ✧</span>';
+ const p=document.createElement('div');p.textContent=messages[type];box.appendChild(p);
+ box.classList.remove('show');void box.offsetWidth;box.classList.add('show');
+ box.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+</script>
+</body>
+</html>
